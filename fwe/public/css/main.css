@@ -1,0 +1,96 @@
+body {
+    color: white;
+}
+
+@font-face {
+    font-family: "later";
+    src: url("/public/fonts/later.ttf");
+}
+
+/*========Welcome============*/
+#welcome {
+    margin-top: 400px;
+    margin-left: 50px;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+#welcome h1 {
+    font-size: 10vw;
+}
+#welcome span {
+    font-size: 1.5vw;
+    letter-spacing: 5px;
+}
+#welcome a {
+    border-radius: 150px;
+    background: rgb(149, 50, 50);
+    color: white;
+    font-size: 1.5vw;
+}
+
+#welcome a:hover {
+    transition: 0.5s;
+    border: solid rgb(149, 50, 50);
+    background-color: transparent;
+    color: white;
+}
+/*========Welcome ends here ============*/
+
+/*========Misson============*/
+#who {
+    border-radius: 0;
+    margin-top: 100px;
+    background-color: rgb(149, 50, 50);
+    padding: 20px;
+}
+#who img {
+    padding: 20px;
+}
+
+#who h3 {
+    font-family: later;
+    color: white;
+    font-size: 30px;
+}
+/*===============Misson Ends Here====================*/
+
+/*===============Gallery====================*/
+#Gallery {
+    border-radius: 0;
+    background: rgb(149, 50, 50);
+    color: white;
+}
+#Gallery h3 {
+    font-family: later;
+    font-size: 50px;
+}
+#Gallery .carousel-caption {
+    color: white;
+    background-color: black;
+    padding: 30px;
+}
+/*===============Gallery Ends Here====================*/
+
+/*===============Founder Ends Here====================*/
+#founder {
+    margin-top: 0px;
+    background: rgb(149, 50, 50);
+    color: white;
+    border-radius: 0;
+}
+#founder img {
+    padding: 20px;
+
+    border-radius: 100px;
+}
+
+#founder h3 {
+    font-family: later;
+}
+/*===============Founder Ends Here====================*/
