@@ -1,96 +1,161 @@
-body {
-    color: white;
-}
-
-@font-face {
-    font-family: "later";
-    src: url("/public/fonts/later.ttf");
-}
-
-/*========Welcome============*/
-#welcome {
-    margin-top: 400px;
-    margin-left: 50px;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+#navigation {
+    background: url("/images/background2-image.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
     background-size: cover;
-    color: white;
 }
 
-#welcome h1 {
-    font-size: 10vw;
-}
-#welcome span {
-    font-size: 1.5vw;
-    letter-spacing: 5px;
-}
-#welcome a {
-    border-radius: 150px;
-    background: rgb(149, 50, 50);
-    color: white;
-    font-size: 1.5vw;
+.navbar .navbar-toggler-icon {
+    background-image: url("/images/menu.png");
 }
 
-#welcome a:hover {
+nav {
+    padding: 24px;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .nav-item .nav-link {
+    color: white;
+    transition: 0.4s;
+    color: #000000;
+    padding: 0 10px;
+    margin: 30px;
+}
+
+.navbar {
+    background-image: url("/images/fill.jpg");
+}
+.navbar .navbar-brand:hover {
+    transform: scale(1.2);
     transition: 0.5s;
-    border: solid rgb(149, 50, 50);
-    background-color: transparent;
-    color: white;
 }
-/*========Welcome ends here ============*/
 
-/*========Misson============*/
+.navbar .nav-item .nav-link:hover {
+    background-color: #ffffff;
+    color: #eea200;
+}
+
+#navigation .carousel-caption h1 {
+    color: #000000;
+    font-size: 80px;
+    padding: 40px;
+    text-align: left;
+}
+
+#navigation .carousel-caption {
+    margin-bottom: 50px;
+    left: 20px;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.897);
+    border-left: solid rgb(0, 0, 0);
+    width: 550px;
+}
+#navigation .carousel-caption a {
+    float: left;
+    margin-left: 40px;
+    border-radius: 30px;
+}
+
 #who {
+    background: #ffffff;
     border-radius: 0;
-    margin-top: 100px;
-    background-color: rgb(149, 50, 50);
-    padding: 20px;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.5);
+}
+#who h1 {
+    font-size: 50px;
 }
 #who img {
     padding: 20px;
 }
-
-#who h3 {
-    font-family: later;
-    color: white;
-    font-size: 30px;
-}
-/*===============Misson Ends Here====================*/
-
-/*===============Gallery====================*/
-#Gallery {
-    border-radius: 0;
-    background: rgb(149, 50, 50);
-    color: white;
-}
-#Gallery h3 {
-    font-family: later;
-    font-size: 50px;
-}
-#Gallery .carousel-caption {
-    color: white;
-    background-color: black;
-    padding: 30px;
-}
-/*===============Gallery Ends Here====================*/
-
-/*===============Founder Ends Here====================*/
-#founder {
-    margin-top: 0px;
-    background: rgb(149, 50, 50);
-    color: white;
-    border-radius: 0;
-}
-#founder img {
+#who #p2 {
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.5);
     padding: 20px;
-
-    border-radius: 100px;
+    border-left: solid black;
+}
+#who #p1 {
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-left: none;
+    border-right: solid black;
 }
 
-#founder h3 {
-    font-family: later;
+#events {
+    background-image: url("/images/event.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+    color: white;
+    text-align: left;
 }
-/*===============Founder Ends Here====================*/
+
+#events h3 {
+    font-size: 35px !important;
+    padding: 20px;
+}
+#events p {
+    padding: 20px;
+}
+
+#events h1 {
+    font-size: 40px;
+}
+
+.map {
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.contact-form {
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control {
+    border-radius: 1rem;
+}
+.contact-image {
+    text-align: center;
+}
+.contact-image img {
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form {
+    padding: 14%;
+}
+.contact-form form .row {
+    margin-bottom: -7%;
+}
+.contact-form h3 {
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
